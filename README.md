@@ -30,8 +30,8 @@ If you are interested in any of my config files, feel free to take a look at the
 ### Create a bare repository
 `git init --bare $HOME/.dotfilesgit`<br>
 `alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`<br>
-Optionally, we can add our new alias to zsh aliases file so we don't have to run the command above everytime a shell session is started.<br>
-`echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'" >> $HOME/.zsh/aliases`<br>
+Optionally, we can add our new alias to zsh config file so we don't have to run the command above everytime a shell session is started.<br>
+`echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'" >> $HOME/.zshrc`<br>
 Using our new alias to complete the configuration by running git commands...<br>
 `dotfiles config --local status.showUntrackedFiles no'`<br>
 For adding files to our repo, eg .vimrc file:<br>
