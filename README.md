@@ -1,6 +1,6 @@
 # Victor's dotfiles
 
-Victor Talamantes bare git repo for my personal configuration files.
+Victor Talamantes' bare git repo with configuration files.
 
 # What are dotfiles?
 Configuration files with a dot prefix (.) used to personalize your Linux or other Unix-based systems.
