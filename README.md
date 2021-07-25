@@ -2,7 +2,7 @@
 
 Victor Talamantes' bare git repo with configuration files.
 
-# What are dotfiles?
+**What are dotfiles?**
 Configuration files with a dot prefix (.) used to personalize your Linux or other Unix-based systems.
 
 # Who am I?
