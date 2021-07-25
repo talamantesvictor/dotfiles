@@ -28,28 +28,28 @@ If you are interested in any of my config files, take a look at them.
 **The following is the way you can configure a bare repo as mine and/or clone this files to your system.**
 
 ### Create a bare repository
-`git init --bare $HOME/.dotfilesgit`
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`
-Optionally, we can add our new alias to zsh aliases file so we don't have to run the command above everytime a shell session is started.
-`echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'" >> $HOME/.zsh/aliases`
-Using our new alias to complete the configuration by running git commands...
-`dotfiles config --local status.showUntrackedFiles no'`
-For adding files to our repo, eg .vimrc file:
-`dotfiles add .vimrc`
-Now we can just add our commit, set the remote and push.
-`dotfiles commit -m "add .vimrc"`
+`git init --bare $HOME/.dotfilesgit`<br>
+`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`<br>
+Optionally, we can add our new alias to zsh aliases file so we don't have to run the command above everytime a shell session is started.<br>
+`echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'" >> $HOME/.zsh/aliases`<br>
+Using our new alias to complete the configuration by running git commands...<br>
+`dotfiles config --local status.showUntrackedFiles no'`<br>
+For adding files to our repo, eg .vimrc file:<br>
+`dotfiles add .vimrc`<br>
+Now we can just add our commit, set the remote and push.<br>
+`dotfiles commit -m "add .vimrc"`<br>
 ...
 
 ### Installing
-Avoid recursive issues by adding .dotfilesgit to global git ignore.
-`echo ".dotfilesgit" >> .gitignore`
-Clone this repo using https or ssh
-`git clone --bare https://github.com/talamantesvictor/dotfiles.git $HOME/.dotfilesgit`
-Create an alias to run git commands for this repo
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`
-No tracking
-`dotfiles config --local status.showUntrackedFiles no'`
-Git checkout
+Avoid recursive issues by adding .dotfilesgit to global git ignore.<br>
+`echo ".dotfilesgit" >> .gitignore`<br>
+Clone this repo using https or ssh<br>
+`git clone --bare https://github.com/talamantesvictor/dotfiles.git $HOME/.dotfilesgit`<br>
+Create an alias to run git commands for this repo<br>
+`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`<br>
+No tracking<br>
+`dotfiles config --local status.showUntrackedFiles no'`<br>
+Git checkout<br>
 `dotfiles checkout`
 <br>
 # Acknowledgment
