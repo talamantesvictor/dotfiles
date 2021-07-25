@@ -9,7 +9,7 @@ Configuration files with a dot prefix (.) used to personalize your Linux or othe
 
 ![Victor Talamantes](https://www.victortalamantes.com/content/images/2021/03/victor-cartoonish-250.png)
 
-I am Victor Talamantes, CEO of Binmatter and founder of Indies Mexico. I'm a programmer and I've worked on hundreds of software projects. I fell in love with everything FOSS related recently and this is my first public repo. 
+I am Victor Talamantes, CEO of Binmatter and founder of Indies Mexico. I'm a programmer and I've worked on hundreds of software projects. I fell in love recently with everything FOSS related and this is my first public repo. 
 
 **You can find more about my work here:**
 
