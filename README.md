@@ -1,6 +1,6 @@
 # Victor's dotfiles
 
-Victor Talamantes' bare git repo with configuration files.
+Victor Talamantes' bare git repo with personal configuration files.
 
 **What are dotfiles?**
 Configuration files with a dot prefix (.) used to personalize your Linux or other Unix-based systems.
@@ -24,7 +24,7 @@ I am Victor Talamantes, CEO of Binmatter and founder of Indies Mexico. I'm a pro
 <br>
 
 # Usage
-If you are interested in any of my config files, take a look at them.
+If you are interested in any of my config files, feel free to take a look at them.<br>
 **The following is the way you can configure a bare repo as mine and/or clone this files to your system.**
 
 ### Create a bare repository
