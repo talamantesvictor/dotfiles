@@ -31,7 +31,7 @@ let mapleader = " "			" Change leader key to space instead of \
 set termguicolors			" True color
 set number				" Line numbers
 set noshowmode				" Prevent modes showing below the status line (using lightline)
-set noswapfile				 " No swap
+set noswapfile				" No swap
 set smarttab 				" Auto indent
 set shiftwidth=3 			" One tab == three spaces
 set tabstop=3 				" One tab == three spaces
