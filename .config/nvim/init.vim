@@ -5,22 +5,24 @@
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/autoload/plugged')
-	" Better Syntax Support
-	Plug 'sheerun/vim-polyglot'
-	" Auto pairs for '(' '[' '{'
-	Plug 'jiangmiao/auto-pairs'
-	" Dracula Theme
-	Plug 'dracula/vim',{'as': 'dracula'}
-	" Auto suggestions
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	" Status line
-	Plug 'itchyny/lightline.vim'
-	" Popups, plenary and Telescope fuzzy finder
-	Plug 'nvim-lua/popup.nvim'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim' 
-	" Multiple cursors
-	Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+   " Better Syntax Support
+   Plug 'sheerun/vim-polyglot'
+   " Auto pairs for '(' '[' '{'
+   Plug 'jiangmiao/auto-pairs'
+   " Dracula Theme
+   Plug 'dracula/vim',{'as': 'dracula'}
+   " Auto suggestions
+   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+   " Status line
+   Plug 'itchyny/lightline.vim'
+   " Popups, plenary and Telescope fuzzy finder
+   Plug 'nvim-lua/popup.nvim'
+   Plug 'nvim-lua/plenary.nvim'
+   Plug 'nvim-telescope/telescope.nvim' 
+   " Multiple cursors
+   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+   " Quick comments
+   Plug 'b3nj5m1n/kommentary'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
