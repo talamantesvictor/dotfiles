@@ -23,6 +23,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    " Quick comments
    Plug 'b3nj5m1n/kommentary'
+   " LaTeX documents
+   Plug 'lervag/vimtex'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,11 +58,6 @@ vmap <leader>xy :!xclip -f -sel clip<CR>
 map <leader>xp mz:-1r !xclip -o -sel clip<CR>
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Splits and Tabbed Files
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set splitbelow splitright
-
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -83,11 +80,13 @@ map <Leader>tk <C-w>t<C-w>K
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " `gf` opens file under cursor in a new vertical split
 nnoremap gf :vertical wincmd f<CR>
+
 " Telescope keybindings
-nnoremap <leader>fe <cmd>Telescope file_browser<cr>
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fe <cmd>Telescope file_browser<CR>
+nnoremap <leader>ff <cmd>Telescope find_files<CR>
+nnoremap <leader>fg <cmd>Telescope live_grep<CR>
+nnoremap <leader>fb <cmd>Telescope buffers<CR>
+
 " Move lines
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -95,4 +94,3 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
-
