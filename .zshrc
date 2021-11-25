@@ -65,7 +65,6 @@ export ZSH="/home/victor/.oh-my-zsh"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
 
 # User configuration
 
