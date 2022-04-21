@@ -1,7 +1,7 @@
 # disable blank rows between prompts
 add_newline = false
 # increase timeout for git commands
-command_timeout = 1000
+command_timeout = 1500
 # directory scanning
 scan_timeout = 50
 # prompt format
