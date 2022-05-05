@@ -22,6 +22,7 @@
       order = 0
       maximised = False
       fullscreen = False
+      size = 1100, 700
       title = victor@localhost
       last_active_term = f72a048f-0e81-450f-805a-72ea80fdf024
       last_active_window = True
