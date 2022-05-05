@@ -94,4 +94,6 @@ alias rm='rm -i'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'
 
+alias vim='nvim'
+
 eval "$(starship init zsh)"
