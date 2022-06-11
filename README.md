@@ -53,7 +53,12 @@ Git checkout<br>
 `dotfiles checkout`
 <br>
 # Acknowledgment
-Special thanks to Derek Taylor from [DistroTube](https://www.youtube.com/c/DistroTube) for his great content, and Gabrielle Young for her article [The best way to store your dotfiles](https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained).
+Special thanks to Derek Taylor from [DistroTube](https://www.youtube.com/c/DistroTube) for his great content.
+
+# Donations
+I take pride in being able to help people with the knowledge I have gained over the years. I would gladly appreciate a coffee or beer from you.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/talamantesvic)
 
 # License
 The files and scripts in this repository are licensed under the MIT License.
