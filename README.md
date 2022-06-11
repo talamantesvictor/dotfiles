@@ -56,9 +56,9 @@ Git checkout<br>
 Special thanks to Derek Taylor from [DistroTube](https://www.youtube.com/c/DistroTube) for his great content.
 
 # Donations
-I take pride in being able to help people with the knowledge I have gained over the years. I would gladly appreciate a coffee or beer from you.
+I take pride in being able to help people with the knowledge I have gained over the years. I would gladly appreciate a coffee (or beer) from you.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/talamantesvic)
+<a href='https://ko-fi.com/Q5Q4D7835' target='_blank'><img height='44' style='border:0px;height:44px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 # License
 The files and scripts in this repository are licensed under the MIT License.
