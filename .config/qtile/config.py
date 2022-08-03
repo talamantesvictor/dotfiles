@@ -67,7 +67,7 @@ keys = [
 # groups = [Group(i) for i in "123456789"]
 groups = []
 workspaces = [ 
-    {"name": "0", "label": "0", "key": "0", "layout": "columns", "matches": [Match(title=["Discord"])]},
+    {"name": "0", "label": "0", "key": "0", "layout": "columns", "matches": [Match(wm_class=["discord"])]},
     {"name": "1", "label": "", "key": "1", "layout": "matrix", "matches": None},
     {"name": "2", "label": "", "key": "2", "layout": "columns", "matches": None},
     {"name": "3", "label": "", "key": "3", "layout": "columns", "matches": None},
