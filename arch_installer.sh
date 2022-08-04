@@ -15,6 +15,7 @@
 # pacman -S neovim         # Install neovim text editor
 # pacman -S nodejs npm     # Used for development and neovim plugin
 # pacman -S ripgrep        # Used by neovim telescope plugin
+# pacman -S dunst          # Notifications
 
 # *****************************************************
 # GUI Applications
