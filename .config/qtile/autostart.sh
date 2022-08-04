@@ -1,3 +1,4 @@
 #!/bin/sh
 picom &
-nitrogen --restore
+nitrogen --restore &
+dunst &
