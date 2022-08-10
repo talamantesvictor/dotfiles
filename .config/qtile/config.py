@@ -198,11 +198,15 @@ screens = [
                     foreground = colors[3],
                 ),
                 widget.Spacer(),
+                widget.Systray(
+                    icon_size=20,
+                    padding=10
+                ),
                 widget.TextBox(
                     text="墳",
                     foreground=colors[2],
                     fontsize=30,
-                    padding=8,
+                    padding=10,
                     mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("pavucontrol")},
                 ),
                 widget.TextBox(
@@ -218,13 +222,6 @@ screens = [
                     padding = 10,
                     format="%A, %B %d",
                 ),
-                # widget.TextBox(
-                #     text=" ",
-                #     padding=0,
-                #     fontsize=10,
-                #     foreground=colors[2],
-                #     background=colors[0],
-                # ),
                 widget.TextBox(
                     text="",
                     padding=0,
