@@ -46,9 +46,9 @@ Avoid recursive issues by adding .dotfilesgit to global git ignore.<br>
 Clone this repo using https or ssh<br>
 `git clone --bare https://github.com/talamantesvictor/dotfiles.git $HOME/.dotfilesgit`<br>
 Create an alias to run git commands for this repo<br>
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`<br>
+`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME`<br>
 No tracking<br>
-`dotfiles config --local status.showUntrackedFiles no'`<br>
+`dotfiles config --local status.showUntrackedFiles no`<br>
 Git checkout<br>
 `dotfiles checkout`
 <br>
