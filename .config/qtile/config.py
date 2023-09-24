@@ -56,19 +56,19 @@ keys = [
     Key([altkey], "Tab", lazy.spawn("rofi -show window"), desc="Applications launcher"),
     Key([superkey], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Audio controls
-    Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5")),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5")),
-    Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%-")),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+")),
+    Key([], "XF86AudioMute", lazy.spawn("amixer set Master toggle")),
     # Brigness controls
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set -10%")),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set 10%+")),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
 # groups = [Group(i) for i in "123456789"]
 groups = []
 workspaces = [ 
-    {"name": "0", "label": "0", "key": "0", "layout": "columns", "matches": [Match(wm_class=["discord"])]},
-    {"name": "1", "label": "", "key": "1", "layout": "matrix", "matches": None},
+    {"name": "0", "label": "󰟒", "key": "0", "layout": "columns", "matches": None},
+    {"name": "1", "label": "", "key": "1", "layout": "columns", "matches": None},
     {"name": "2", "label": "", "key": "2", "layout": "columns", "matches": None},
     {"name": "3", "label": "", "key": "3", "layout": "columns", "matches": None},
     {"name": "4", "label": "", "key": "4", "layout": "columns", "matches": None},
@@ -139,7 +139,7 @@ widget_defaults = dict(
 extension_defaults = widget_defaults.copy()
 
 launcher_button = widget.TextBox(
-    background=colors[7],
+    background=colors[5],
     foreground=colors[0],
     padding=10,
     text="",
@@ -161,11 +161,11 @@ groupbox = widget.GroupBox(
     # other_screen_border = colors[7],
     foreground = colors[2],
     background = colors[0],
-    visible_groups=["1","2","3","4","5"]
+    visible_groups=["0","1","2","3","4","5"]
 )
 
 screens = [
-    Screen(),
+    # Screen(),
     # Screen(
     #     top=bar.Bar(
     #         [
@@ -202,12 +202,9 @@ screens = [
                     icon_size=20,
                     padding=10
                 ),
-                widget.TextBox(
-                    text="墳",
-                    foreground=colors[2],
-                    fontsize=30,
-                    padding=10,
-                    mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("pavucontrol")},
+                widget.Battery(
+                    show_short_text=False,
+                    format="{percent:2.0%}"
                 ),
                 widget.TextBox(
                     text="",
