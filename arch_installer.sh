@@ -9,7 +9,7 @@
 # pacman -S zip unzip      # Compressed files
 # pacman -S xorg-xrandr    # For my multi monitor setup
 # pacman -S xorg-xinit     # xorg startup config
-# pacman -S pamixer        # Audio mixer
+# pacman -S amixer         # Audio mixer
 # pacman -S brightnessctl  # Brightness
 # pacman -S picom          # Compositor
 # pacman -S neovim         # Install neovim text editor
