@@ -1,6 +1,3 @@
-# turn on my second monitor when the 
-xrandr --output DisplayPort-2 --left-of HDMI-A-0 --auto
-
 # if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -16,7 +13,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'
 
 alias vim='nvim'
 
-alias notes='nvim +"cd /mnt/mediadrive/notes"'
+# alias notes='nvim +"cd /mnt/mediadrive/notes"'
 
 # append history instead of overwriting the file
 shopt -s histappend
