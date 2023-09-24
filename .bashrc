@@ -21,4 +21,3 @@ shopt -s histappend
 eval "$(starship init bash)"
 # run fetchmastet 6000 when opening a new terminal instance
 fm6000 --random --color magenta
-
