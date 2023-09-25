@@ -1,6 +1,3 @@
-# if not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
 # aliases
 alias ls='exa --color=always --group-directories-first'
 alias ll='exa -l --color=always --group-directories-first'
