@@ -67,12 +67,12 @@ keys = [
 # groups = [Group(i) for i in "123456789"]
 groups = []
 workspaces = [ 
-    {"name": "0", "label": "󰟒", "key": "0", "layout": "columns", "matches": None},
-    {"name": "1", "label": "", "key": "1", "layout": "columns", "matches": None},
-    {"name": "2", "label": "", "key": "2", "layout": "columns", "matches": None},
-    {"name": "3", "label": "", "key": "3", "layout": "columns", "matches": None},
-    {"name": "4", "label": "", "key": "4", "layout": "columns", "matches": None},
-    {"name": "5", "label": "", "key": "5", "layout": "columns", "matches": None},
+    {"name": "0", "label": "󰟒", "key": "1", "layout": "columns", "matches": None},
+    {"name": "1", "label": "", "key": "2", "layout": "columns", "matches": None},
+    {"name": "2", "label": "", "key": "3", "layout": "columns", "matches": None},
+    {"name": "3", "label": "", "key": "4", "layout": "columns", "matches": None},
+    {"name": "4", "label": "", "key": "5", "layout": "columns", "matches": None},
+    {"name": "5", "label": "", "key": "6", "layout": "columns", "matches": None},
 ]
 
 def go_to_group(name):
