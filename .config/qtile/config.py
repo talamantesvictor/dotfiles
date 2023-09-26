@@ -202,9 +202,24 @@ screens = [
                     icon_size=20,
                     padding=10
                 ),
+                widget.BatteryIcon(
+                    theme_path='~/.config/qtile/assets/battery/',
+                    scale=1,
+                ),
                 widget.Battery(
                     show_short_text=False,
                     format="{percent:2.0%}"
+                ),
+                widget.Volume(
+                    theme_path='~/.config/qtile/assets/volume/',
+                    emoji=True,
+                    padding=0
+                ),
+                widget.Volume(
+                    padding=0
+                ),
+                widget.Spacer (
+                    length=10
                 ),
                 widget.TextBox(
                     text="",
@@ -217,7 +232,7 @@ screens = [
                     background = "000000",
                     foreground = colors[8],
                     padding = 10,
-                    format="%A, %B %d",
+                    format="%A, %b %d",
                 ),
                 widget.TextBox(
                     text="",
