@@ -62,17 +62,18 @@ keys = [
     # Brigness controls
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set 10%+")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    # Power
+    Key([superkey, "control"], "p", lazy.spawn(os.path.expanduser("~/.config/rofi/scripts/powermenu_t2"))),
 ]
 
 # groups = [Group(i) for i in "123456789"]
 groups = []
 workspaces = [ 
-    {"name": "0", "label": "󰟒", "key": "1", "layout": "columns", "matches": None},
-    {"name": "1", "label": "", "key": "2", "layout": "columns", "matches": None},
-    {"name": "2", "label": "", "key": "3", "layout": "columns", "matches": None},
-    {"name": "3", "label": "", "key": "4", "layout": "columns", "matches": None},
-    {"name": "4", "label": "", "key": "5", "layout": "columns", "matches": None},
-    {"name": "5", "label": "", "key": "6", "layout": "columns", "matches": None},
+    {"name": "1", "label": "󰟒", "key": "1", "layout": "columns", "matches": None},
+    {"name": "2", "label": "", "key": "2", "layout": "columns", "matches": None},
+    {"name": "3", "label": "", "key": "3", "layout": "columns", "matches": None},
+    {"name": "4", "label": "", "key": "4", "layout": "columns", "matches": None},
+    {"name": "5", "label": "", "key": "5", "layout": "columns", "matches": None},
 ]
 
 def go_to_group(name):
@@ -161,7 +162,7 @@ groupbox = widget.GroupBox(
     # other_screen_border = colors[7],
     foreground = colors[2],
     background = colors[0],
-    visible_groups=["0","1","2","3","4","5"]
+    visible_groups=["1","2","3","4","5"]
 )
 
 screens = [
@@ -232,7 +233,7 @@ screens = [
                     background = "000000",
                     foreground = colors[8],
                     padding = 10,
-                    format="%A, %b %d",
+                    format="%a, %b %d",
                 ),
                 widget.TextBox(
                     text="",
