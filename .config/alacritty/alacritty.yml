@@ -9,12 +9,15 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ~/.config/alacritty/themes/dracula.yml
+  # - ~/.config/alacritty/themes/dracula.yml
+  - ~/.config/alacritty/themes/aura.yml
 
     # Any items in the `env` entry below will be added as
     # environment variables. Some entries may override variables
     # set by alacritty itself.
-    #env:
+env:
+  WINIT_X11_SCALE_FACTOR: "1.2"
+
     # TERM variable
     #
     # This value is used to set the `$TERM` environment variable for
@@ -117,7 +120,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "JetBrainsMono Nerd Font"
+    family: "JetBrainsMono Nerd Font Mono"
 
       # The `style` can be specified to pick a specific face.
       # style: Regular
@@ -156,7 +159,7 @@ font:
       #style: Bold Italic
 
       # Point size
-      #size: 11.0
+    size: 10.0
 
       # Offset is the extra space around each character. `offset.y` can be thought
       # of as modifying the line spacing, and `offset.x` as modifying the letter
