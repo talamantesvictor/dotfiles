@@ -5,9 +5,13 @@ Victor Talamantes' bare git repo with personal configuration files.
 **What are dotfiles?**
 Configuration files with a dot prefix (.) used to personalize your Linux or other Unix-based systems.
 
-# Who am I?
+> ⚠️ **This repository is no longer maintained**  
+>  
+> This project is outdated as I now use macOS as my primary system.  
+> However, I'm still in love with GNU/Linux, and my next build will definitely use it!
+<br><br>
 
-![Victor Talamantes](https://www.victortalamantes.com/content/images/2021/03/victor-cartoonish-250.png)
+# Who am I?
 
 I am Victor Talamantes, CEO of Binmatter and founder of Indies Mexico. I'm a programmer and I've worked on hundreds of software projects. I fell in love recently with everything FOSS related and this is my first public repo. 
 
