@@ -21,34 +21,52 @@ I am Victor Talamantes, CEO of Binmatter and founder of Indies Mexico. I'm a pro
 
 <br>
 
+# Current Setup
+- **OS**: CachyOS (Arch Linux)
+- **WM**: niri (Wayland compositor)
+- **Launcher**: noctalia
+- **Terminal**: Ghostty (Dracula theme, JetBrainsMono Nerd Font)
+- **Shell**: Fish (primary) + Bash (script compatibility)
+- **Prompt**: Starship
+
 # Usage
 If you are interested in any of my config files, feel free to take a look at them.<br>
-**The following is the way you can configure a bare repo as mine and/or clone this files to your system.**
+**The following is the way you can configure a bare repo as mine and/or clone these files to your system.**
 
-### Create a bare repository
-`git init --bare $HOME/.dotfilesgit`<br>
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'`<br>
-Optionally, we can add our new alias to zsh config file so we don't have to run the command above everytime a shell session is started.<br>
-`echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'" >> $HOME/.zshrc`<br>
-Using our new alias to complete the configuration by running git commands...<br>
-`dotfiles config --local status.showUntrackedFiles no'`<br>
-For adding files to our repo, eg .vimrc file:<br>
-`dotfiles add .vimrc`<br>
-Now we can just add our commit, set the remote and push.<br>
-`dotfiles commit -m "add .vimrc"`<br>
-...
+### Installer scripts
+- **Arch Linux / CachyOS**: `./arch_installer.sh` — installs packages, sets up fish, and clones the dotfiles repo.
+- **Fedora**: `./fedora_installer.sh` — installs packages and configures the dotfiles repo.
 
-### Installing
-Avoid recursive issues by adding .dotfilesgit to global git ignore.<br>
-`echo ".dotfilesgit" >> .gitignore`<br>
-Clone this repo using https or ssh<br>
-`git clone --bare https://github.com/talamantesvictor/dotfiles.git $HOME/.dotfilesgit`<br>
-Create an alias to run git commands for this repo<br>
-`alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME`<br>
-No tracking<br>
-`dotfiles config --local status.showUntrackedFiles no`<br>
-Git checkout<br>
-`dotfiles checkout`
+### Manual setup
+```bash
+git init --bare $HOME/.dotfilesgit
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'
+dotfiles config --local status.showUntrackedFiles no
+```
+
+Add the alias to your shell config:
+```bash
+# For fish (primary)
+echo "alias dotfiles='/usr/bin/git --git-dir=\$HOME/.dotfilesgit/ --work-tree=\$HOME'" >> ~/.config/fish/config.fish
+
+# For bash (fallback)
+echo "alias dotfiles='/usr/bin/git --git-dir=\$HOME/.dotfilesgit/ --work-tree=\$HOME'" >> ~/.bashrc
+```
+
+### Installing on a new system
+```bash
+git clone --bare https://github.com/talamantesvictor/dotfiles.git $HOME/.dotfilesgit
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfilesgit/ --work-tree=$HOME'
+dotfiles config --local status.showUntrackedFiles no
+dotfiles checkout
+```
+
+### Adding files
+```bash
+dotfiles add .config/ghostty/config
+dotfiles commit -m "add ghostty config"
+dotfiles push
+```
 <br>
 # Acknowledgment
 Special thanks to Derek Taylor from [DistroTube](https://www.youtube.com/c/DistroTube) for his great content.
