@@ -4,7 +4,6 @@ set -e
 echo "==> Installing core packages..."
 sudo pacman -S --needed --noconfirm \
     ghostty \
-    ttf-firacode-nerd \
     vlc \
     starship \
     eza \
@@ -54,7 +53,7 @@ fi
 
 echo "==> All done!"
 echo "   - Ghostty installed"
-echo "   - FiraCode Nerd font installed (JetBrainsMono from .fonts/)"
+echo "   - JetBrainsMono + FiraCode Nerd fonts (from .fonts/)"
 echo "   - VLC installed"
 echo "   - Zen Browser installed"
 echo "   - Neovim + LazyVim configured"
