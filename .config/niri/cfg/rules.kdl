@@ -3,7 +3,15 @@
         clip-to-geometry true
     }
 
+    window-rule {
+        match app-id="^xdg-desktop-portal-gtk$"
+        open-floating true
+        default-column-width { fixed 800; }
+        default-window-height { fixed 600; }
+    }
+
     layer-rule {
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
+
