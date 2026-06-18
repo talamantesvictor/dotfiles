@@ -121,9 +121,10 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    CTRL+Shift+1                        { screenshot; }
-    CTRL+Shift+2                        { screenshot-screen; }
-    CTRL+Shift+3                        { screenshot-window; }
+    // macOS-style screenshot shortcuts
+    Mod+Shift+3                         hotkey-overlay-title="Screenshot: Full Screen" { spawn-sh "$HOME/.config/niri/scripts/screenshot-screen.sh"; }
+    Mod+Shift+4                         hotkey-overlay-title="Screenshot: Select Area" { spawn-sh "$HOME/.config/niri/scripts/screenshot-area.sh"; }
+    Mod+Ctrl+Shift+4                    hotkey-overlay-title="Screenshot: Clipboard Only" { spawn-sh "$HOME/.config/niri/scripts/screenshot-clipboard.sh"; }
 
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
